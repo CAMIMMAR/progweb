@@ -8,14 +8,13 @@
     margin-block-end: 10px;
 }
 
-.logo {
-    width: 150px;
-    height: 30px;
-    margin: 10px 10px;
-    padding-left: 620px;
+.brand {
+   display: grid;
+   place-items: center;
+   padding-top: 10px;
 }
 
-nav {
+.navbar navbar-expand-lg bg-body-tertiary {
     font-family: 'Lato', sans-serif;
     background-color: white;
 }
@@ -43,7 +42,7 @@ nav {
     background: goldenrod;
 }
 
-.portada {
+.carousel slide {
     margin: 10px 0px;
     width: 105%;
     height: 20%;
@@ -134,4 +133,3 @@ nav {
 .social-link a:hover {
     background-color: goldenrod;
 }
-
