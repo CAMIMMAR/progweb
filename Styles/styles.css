@@ -1,135 +1,220 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
-
-.barra {
-    background-color: black;
-    margin-block-end: 10px;
-}
-
-.brand {
-   display: grid;
-   place-items: center;
-   padding-top: 10px;
-}
-
 .navbar navbar-expand-lg bg-body-tertiary {
     font-family: 'Lato', sans-serif;
-    background-color: white;
+    color: white;
+    padding: 20px 20px;
 }
-
+.brand {
+    padding: 20px;
+}
+/* NAV BAR */
 .lista {
     list-style: none;
     width: 100%;
     margin: 0;
 }
-
 .lista li {
-    display: inline-block;
-    text-align: center;
+    display: grid;
+    place-items: center;
 }
-
-.lista li a {
+.nav-item a {
     text-decoration: none;
     padding: 10px 98px;
     display: block;
     cursor: pointer;
     color: black;
 }
-
-.lista li a:hover {
+.nav-item a:hover {
     background: goldenrod;
 }
 
+/* IMAGENES PORTADA */
 .carousel slide {
     margin: 10px 0px;
     width: 105%;
     height: 20%;
 }
-
+/* CONTENIDO */
 .subtitulos {
     color: grey;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 10px;
     text-align: left;
     margin: 15px 20px;
 }
-
-.conteiner {
-    display: flex;
-    justify-content: center;
-}
-
-.librosDestacados {
-    width: 500px;
-    height: 400px;
-    margin: 0 20px 40px;
-}
-
-.bloque {
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Lato', sans-serif;
+.contenedor {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px 100px;
+}
+.imagencon {
+    width: 100%;
+    height: 400px;
+}
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: goldenrod;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0,0.2);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0,0.4)
+    transform: translateY(3%);
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1,5;
+    color: gray;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+.card .contenido a:hover {
+    background: goldenrod;
+    color: black;
+}
+.nosotros {
+    display: flex;
+    justify-content: space-around;
+}
+.nosotros img {
+    width: 600px;
+    margin: 20px;
+}
+.nosotros p {
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    align-items: center;
+}
+.contacto p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    padding: 0px 20px;
 }
 
+/* FOOTER */
 .footer {
     background-color: black;
-    padding: 80px 0;
+    width: 100%;
 }
-
-.footer-row {
+.footer .bloque-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 50px;
+}
+.footer .bloque-1 .footer-row figure {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-
+    justify-content: center;
+    align-items: center;
 }
-
-.footer-links {
-    width: 20%;
-    padding: 0 80px;
+.footer .bloque-1 .footer-row figure img {
+    width: 250px;
 }
-
-.footer-links h2 {
-    font-size: 20px;
+.footer .bloque-1 .footer-row h2 {
     color: white;
     margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-    display: inline-block;
+    font-size: 20px;
 }
-
-.footer-links ul li a {
-    font-size: 14px;
+.footer .bloque-1 .footer-row ul li a {
     text-decoration: none;
     color: white;
     display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
+    margin-bottom: 10px;
+    transition: all 300ms ease;
 }
-
-.footer-links ul li a:hover {
-    color: goldenrod;
-    padding-left: 6px;
-}
-
-
-.social-link a {
+.footer .bloque-1 .footer-row .social-link a {
     display: inline-block;
-    min: height 40px;
-    width: 40px;
-    background-color: gray;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
     color: white;
-    transition: all .5s ease;
-
+    margin-right: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 300ms ease;
 }
-
-.social-link a:hover {
+.footer .bloque-1 .footer-row .social-link a:hover {
     background-color: goldenrod;
+}
+.footer .bloque-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.footer .bloque-2 small {
+    font-size: 15px;
+}
+/* RESPONSIVE: aplicar cuando la pantalla sea más chica que 320px  */
+@media (max-width:320px) {
+.subtitulos {
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.contenedor {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    margin: 10px 0px;
+}
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros img {
+    width: 100%;
+    margin: 20px;
+}
+.nosotros p {
+    font-size: 16px;
+}
+.footer .bloque-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 10px;
+}
+.contacto p {
+    font-size: 16px;
+    padding: 0px 20px;
+}
 }

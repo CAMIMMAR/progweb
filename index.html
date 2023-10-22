@@ -16,38 +16,36 @@
 </head>
 
 <body>  
-    <header class="barra">
-        <a class="brand" href="#"> <img src="./Imagenes/LIBOOK.png" alt="LIBOOK" width="150" height="30"></a>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="brand" href="#header"> <img src="./Imagenes/LIBOOKx.png" alt="LIBOOK" width="150" height="30"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    </header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- Aplicación primer componente de Bootstrap -->
-        <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Novedades</a>
+                <a class="nav-link" href="#novedades">Novedades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Libros</a>
+                <a class="nav-link" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
-    </nav>
-
+      </nav>
+    </header>
     <section> <!-- Aplicación segundo componente de Bootstrap -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -72,46 +70,95 @@
         </div>
     </section>
 
-     <article class="subtitulos"> 
-            <h1>Novedades</h1>
-     </article>
-
-    <img class="conteiner">
-            <img class="librosDestacados" src="./Imagenes/_41A3509-Edit.webp" alt="SecretosDeLaOración">
-            <img class="librosDestacados" src="./Imagenes/il_fullxfull.4496783699_7923.jpg" alt="CitaEnJerusalem">
-            <img class="librosDestacados" src="./Imagenes/713+ERClSRL._AC_UF350,350_QL80_.jpg" alt="DireccionDivina">
-    
+    <main><!-- CONTENIDO -->
+      <div class="subtitulos" id="novedades">
+        <h1>Novedades</h1>
+      </div>
+      <div class="contenedor">
+        <div class="card">
+          <figure>
+              <img class="imagencon" src="./Imagenes/_41A3509-Edit.webp" alt="SecretosDeLaOración">
+          </figure>
+          <div class="contenido">
+            <h3>Secretos de la Oración</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo omnis neque, fugiat cupiditate minima sequi quidem sit totam quod!</p>
+            <a href="#">Comprar Libro</a>
+          </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img class="imagencon" src="./Imagenes/il_fullxfull.4496783699_7923.jpg" alt="CitaEnJerusalem">
+            </figure>
+            <div class="contenido">
+              <h3>Cita en Jerusalem</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo omnis neque, fugiat cupiditate minima sequi quidem sit totam quod!</p>
+              <a href="#">Comprar Libro</a>
+            </div>
+        </div>
+        <div class="card">
+              <figure>
+                  <img class="imagencon" src="./Imagenes/713+ERClSRL._AC_UF350,350_QL80_.jpg" alt="DireccionDivina">
+              </figure>
+              <div class="contenido">
+                <h3>Dirección Divina</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo omnis neque, fugiat cupiditate minima sequi quidem sit totam quod!</p>
+                <a href="#">Comprar Libro</a>
+              </div>
+        </div>
+      </div>  
+      <div class="subtitulos" id="nosotros">
+        <h1>Nosotros</h1>
+      </div>
+      <div class="nosotros">
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, odio. Blanditiis commodi minima impedit illo totam saepe, explicabo delectus at! Dolor, autem quibusdam asperiores doloribus quam laboriosam beatae eaque reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam nam est porro sed non eius qui accusamus animi fuga. Consequuntur, aspernatur quaerat aperiam officiis pariatur earum molestiae? Officia, ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repudiandae! Assumenda doloribus reiciendis accusamus aperiam corporis fugit? Harum repudiandae odit velit quo saepe, iusto explicabo mollitia alias sunt nesciunt laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, mollitia. Commodi temporibus assumenda, sit quis necessitatibus voluptas quisquam perspiciatis quia quam est nihil atque non. Consectetur, possimus corporis. Sapiente, ipsa?</p>
+        <img src="./Imagenes/Las-librerias-mas-hermosas-del-mundo.jpg" alt="libreria">
+      </div>
+      <div class="subtitulos" id="contacto"> 
+        <h1>Contacto</h1>
+      </div>  
+      <div class="contacto">  
+        <p>Whatsapp: +54 351 4251202</p><br>
+        <p>Nos podes visitar en nuestra sucursal en Av. Vélez Sarsfield 361, Córdoba</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.799908801315!2d-64.18809949999999!3d-31.4196385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a284141f946b%3A0x9383b8fa1189c074!2sAv.%20V%C3%A9lez%20Sarsfield%20361%2C%20X5000JJD%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1697928928485!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+      </div>  
+    </main>
         
-    <footer class="footer">
-            <div class="bloque">
-                <div class="footer-row">
-                    <div class="footer-links">
-                        <h2>Contacto</h2>
-                        <ul>
-                            <li><a href="#">Novedades</a></li>
-                            <li><a href="#">Libros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h2>Ayuda</h2>
-                        <ul>
-                            <li><a href="#">Preguntas</a></li>
-                            <li><a href="#">Compras</a></li>
-                            <li><a href="#">Envios</a></li>
-                            <li><a href="#">Pagos</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h2>Siguenos</h2>
-                        <div class="social-link">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>      
+    <footer class="footer"><!-- FOOTER -->
+            <div class="bloque-1">
+              <div class="footer-row">
+                <figure>
+                  <a href="#">
+                    <img src="./Imagenes/LIBOOK.png" alt="LIBOOK">
+                  </a>
+                </figure>
+              </div>
+              <div class="footer-row">
+                <h2>Información Util</h2>
+                 <ul>
+                   <li><a href="#novedades">Novedades</a></li>
+                   <li><a href="#nosotros">Nosotros</a></li>
+                   <li><a href="#contacto">Contacto</a></li>
+                 </ul>
+              </div>
+              <div class="footer-row">
+                <h2>Ayuda</h2>
+                 <ul>
+                   <li><a href="#">Preguntas</a></li>
+                   <li><a href="#">Compras</a></li>
+                   <li><a href="#">Envios</a></li>
+                   <li><a href="#">Pagos</a></li>
+                 </ul>
+              </div>    
+              <div class="footer-row">
+                 <h2>Siguenos</h2>
+                   <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>      
+                   </div>
+              </div>  
+            </div>
+            <div class="bloque-2">
+               <small>&copy; 2023 <b>LIBOOK</b> Todos los derechos reservados.</small>
             </div>
     </footer>
         
